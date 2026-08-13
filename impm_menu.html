@@ -1,0 +1,87 @@
+<html>
+<head>
+<title>Menu</title>
+<script language="javascript">
+function highlight(tid){
+tid1=document.getElementById(tid);
+tid1.style.backgroundColor="red";
+}
+function normal(tid){
+tid1=document.getElementById(tid);
+tid1.style.backgroundColor="cyan";
+}
+function showSetup(sid){
+sid1=document.getElementById(sid);
+sid1.src="impm_setup.html";
+}
+function showOperation(sid){
+sid1=document.getElementById(sid);
+sid1.src="impm_operation.html";
+}
+function showInformation(sid){
+sid1=document.getElementById(sid);
+sid1.src="impm_information.html";
+}
+function showInformationany(sid){
+sid1=document.getElementById(sid);
+sid1.src="impm_informationAny.html";
+}
+</script>
+<script language="javascript">
+  var photos=new Array("ph5.jpg","ph1.jpg","ph11.jpg","ph12.jpg","ph13.jpg","ph14.jpg","ph15.jpg");
+  var i;
+  i=0;
+  function showSlides(){
+     document.f1.imgSlide.src=photos[i];
+	 i=i+1;
+	 if(i>6)
+	     i=0;
+	  setTimeout("showSlides()",2000); 
+  }
+
+</script>
+</head>
+<body onload="showSlides()" bgcolor="black">
+<table width ="100%">
+<tr height ="70">
+<td  align="center" valign = "middle" bgcolor="maroon">
+<font face="copperplate gothic" size="5" color="white">
+Industrial Manpower Management
+</font>
+<font face="" size="3"color="yellow">
+<sup>A step ahead...</sup>
+</font>
+</td>
+</tr>
+</table>
+<form name ="f1">
+<table width ="100%">
+<tr height="40" bgcolor="cyan" align="center">
+<td id ="about" onmouseover="highlight('about')" onmouseout="normal('about')"><a href="impm_about.html" target="_blank" style="text-decoration:none;">About</a></td>
+<td id="search" onmouseover="highlight('search')" onmouseout="normal('search')"><a href="impm_rptemployeedate.jsp"target="_blank" style="text-decoration:none;"> Search</a></td>
+<td id="reach" onmouseover="highlight('reach')" onmouseout="normal('reach')"><a href="impm_reachus.html" target="_blank" style="text-decoration:none;">Reach</a></td>
+<td id="setup" onmouseover="highlight('setup')" onmouseout="normal('setup')" onclick="showSetup('submenu')">Setup</td>
+<td id="operation" onmouseover="highlight('operation')" onmouseout="normal('operation')" onclick="showOperation('submenu')">Operation</td>
+<td id="information" onmouseover="highlight('information')" onmouseout="normal('information')" onclick="showInformation('submenu')">Information-All</td>
+<td id="informationany" onmouseover="highlight('informationany')" onmouseout="normal('informationany')" onclick="showInformationany('submenu')">Information-Any</td>
+<td id="logout" onmouseover="highlight('logout')" onmouseout="normal('logout')"><a href="impm_loginc.html" target="_blank" style="text-decoration:none;">Logout</a></td>
+</tr>
+</table>
+<table width="100%">
+   <tr height="350">
+      <td width="20%" valign="top" align="center" background="ph10.jpg">
+	     <iframe id="submenu" src="" width="320" height="350"></iframe>
+	  </td>
+	  <td width="80%">
+	       <img name="imgSlide" src="ph10.jpg" width="100%" height="550">
+	  </td>
+   </tr>
+</table>
+
+<table width ="100%">
+<tr height ="70">
+<td  align="center" valign = "middle" bgcolor="maroon">
+<font face="copperplate gothic" size="5" color="white">
+ <marquee>&copy;SM Group of Industries</marquee>
+</font>
+</td>
