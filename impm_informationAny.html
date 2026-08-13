@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>Setup</title>
+<script language ="javascript">
+function highlight(tid){
+tid1=document.getElementById(tid);
+tid1.style.backgroundColor="red";
+}
+function normal(tid){
+tid1=document.getElementById(tid);
+tid1.style.backgroundColor="cyan";
+}
+</script>
+</head>
+<body>
+<form name ="f1">
+<table width ="300" height="220">
+<tr bgcolor="cyan">
+<td align="center" id ="employee profile" onmouseover="highlight('employee profile')" onmouseout="normal('employee profile')"><a href="impm_rptemployeedeptc.jsp" target="_blank" style="text-decoration:none;">Employee Profile [Dept.]</a></td>
+</tr>
+<tr bgcolor="cyan">
+<td align="center" id ="employee profile-shift" onmouseover="highlight('employee profile-shift')" onmouseout="normal('employee profile-shift')"><a href="impm_rptemployeeshiftc.jsp" target="_blank" style="text-decoration:none;">Employee Profile [Shift]</a></td>
+</tr>
+<tr bgcolor="cyan">
+<td align="center" id="attendance register" onmouseover="highlight('attendance register')" onmouseout="normal('attendance register')"><a href="impm_rptemployeeattendance.jsp" target="_blank" style="text-decoration:none;">Attendance Register-[Employee Id]</a></td>
+</tr>
+<tr bgcolor="cyan">
+<td align="center" id="attendance register-date" onmouseover="highlight('attendance register-date')" onmouseout="normal('attendance register-date')"><a href="impm_rptemployeedate.jsp" target="_blank" style="text-decoration:none;">Attendance Register-[Date]</a></td>
+</tr>
+<tr bgcolor="cyan">
+<td align="center" id="attendance register-[out]" onmouseover="highlight('attendance register-[out]')" onmouseout="normal('attendance register-[out]')"><a href="impm_rptemployeeattendanceout.jsp" target="_blank" style="text-decoration:none;">Attendance Register-[Out][Employee Id]</a></td>
+</tr>
+<tr bgcolor="cyan">
+<td align="center" id="attendance register-[outd]" onmouseover="highlight('attendance register-[outd]')" onmouseout="normal('attendance register-[outd]')"><a href="impm_rptemployeedateout.jsp" target="_blank" style="text-decoration:none;">Attendance Register-[Out][Date]</a></td>
+</tr>
+</table>
+</body>
+</html>
