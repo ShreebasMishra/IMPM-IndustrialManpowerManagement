@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>Operation</title>
+<script language ="javascript">
+function highlight(tid){
+tid1=document.getElementById(tid);
+tid1.style.backgroundColor="red";
+}
+function normal(tid){
+tid1=document.getElementById(tid);
+tid1.style.backgroundColor="cyan";
+}
+</script>
+</head>
+<body>
+<form name ="f1">
+<table width ="200" height="120">
+<tr bgcolor="cyan">
+<tr bgcolor="cyan">
+<td align="center" id ="employee profile" onmouseover="highlight('employee profile')" onmouseout="normal('employee profile')"><a href="impm_employee.jsp" target="_blank" style="text-decoration:none;">Employee Profile</a></td>
+</tr>
+<tr bgcolor="cyan">
+<td align="center" id="attendance register" onmouseover="highlight('attendance register')" onmouseout="normal('attendance register')"><a href="impm_attendance.jsp" target="_blank" style="text-decoration:none;">Attendance Register</a></td>
+</tr>
+<tr bgcolor="cyan">
+<td align="center" id="attendance register-[out]" onmouseover="highlight('attendance register-[out]')" onmouseout="normal('attendance register-[out]')"><a href="impm_attendanceout.jsp" target="_blank" style="text-decoration:none;">Attendance Register-[Out]</a></td>
+</tr>
+</table>
+</body>
+</html>
