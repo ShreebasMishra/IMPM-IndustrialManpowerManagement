@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>Setup</title>
+<script language ="javascript">
+function highlight(tid){
+tid1=document.getElementById(tid);
+tid1.style.backgroundColor="red";
+}
+function normal(tid){
+tid1=document.getElementById(tid);
+tid1.style.backgroundColor="cyan";
+}
+</script>
+</head>
+<body>
+<form name ="f1">
+<table width ="200" height="120">
+<tr bgcolor="cyan">
+<tr bgcolor="cyan">
+<td align="center" id ="industry profile" onmouseover="highlight('industry profile')" onmouseout="normal('industry profile')"><a href="impm_indusc.html" target="_blank" style="text-decoration:none;">Industry Profile</a></td>
+</tr>
+<tr bgcolor="cyan">
+<td align="center" id="department profile" onmouseover="highlight('department profile')" onmouseout="normal('department profile')"><a href="impm_deptc.html" target="_blank" style="text-decoration:none;">Department Profile</a></td>
+</tr>
+<tr bgcolor="cyan">
+<td align="center" id="shift profile" onmouseover="highlight('shift profile')" onmouseout="normal('shift profile')"><a href="impm_shiftc.html" target="_blank" style="text-decoration:none;">Shift Profile</a></td>
+</tr>
+</table>
+</body>
+</html>
